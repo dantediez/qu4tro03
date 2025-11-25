@@ -85,6 +85,20 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.prueba{
+    text-align: center;
+}
+
+.bienvenidos{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.pie{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .galeria{
     width: 300px;
     height: auto;
@@ -98,6 +112,24 @@ nav ul li a:hover {
     border: 5px solid rgb(190, 190, 190);
     border-radius: 10px;
 }
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    justify-items: center;
+}
+
+.imagen {
+    margin: 15px;
+    width: 100%; /* La imagen ocupa todo el ancho de su columna */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border: 5px solid rgb(190, 190, 190);
+    border-radius: 10px;
+}
+
 
 /*
 .instagram{
