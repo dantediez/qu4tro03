@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+.tienda {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+}
+
+.precio {
+  margin-top: 10px;
+  font-size: 1.2em;
+}

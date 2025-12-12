@@ -1,0 +1,9 @@
+@use 'variables' as v;
+
+.parrafo{
+    color: v.$primarycolor;
+    text-align: v.$textocentrado;
+    background-color: v.$sombranormal;
+    font-family: v.$fontfamily ;
+    
+}

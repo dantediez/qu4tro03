@@ -1,0 +1,37 @@
+@use 'variables' as v;
+@mixin galeria{
+    width: 300px;
+    height: auto;
+    margin: 15px;
+    border: 5px solid rgb(190, 190, 190);
+    border-radius: 10px;
+}
+
+@mixin contenedor-imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    width: 100%; 
+    justify-items: center;
+}
+
+@mixin imagen-aparte{
+    margin: 15px;
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    border: 5px solid rgb(190, 190, 190);
+    border-radius: 10px;
+}
+
+
+
+.galeria{
+    @include galeria();
+}
+.contenedor-imagenes{
+    @include contenedor-imagenes();
+}
+.imagen-aparte{
+    @include imagen-aparte();
+}

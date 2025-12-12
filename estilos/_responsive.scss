@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .tienda {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria,
+  .imagen {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .pie {
+    text-align: center;
+    font-size: 16px;
+  }
+}

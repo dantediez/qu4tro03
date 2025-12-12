@@ -1,0 +1,50 @@
+@use 'variables' as v;
+@mixin logo{
+    width: 111px;
+    height: 111px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@mixin h1{
+    color: v.$primarycolor;
+    background-color: v.$sombranormal;
+    background-clip: content-box;
+    font-size: 60px;
+    font-style: bold;
+    text-align: center;
+    animation-delay: 1.2s;
+    animation-duration: 3s;
+    margin-bottom: 0px;
+}
+
+
+
+.logo{
+    @include logo();
+}
+
+nav{
+    background-color:v.$sombranormal;
+    padding: 10px 0;
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+                li{
+                    margin: 0 15px;
+                        a{
+                            color:v.$primarycolor;
+                            text-decoration: none;
+                            font-family: v.$fontfamily;
+                                &:hover{
+                                    text-transform: uppercase;
+                                    font-weight: bolder;
+                                        }
+                        }
+                }
+        }
+}
