@@ -1,9 +1,19 @@
 @use 'variables' as v;
 
+.titulo {
+  color: white;
+  background-color: v.$sombranormal;
+  display: table;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
 .parrafo{
     color: v.$primarycolor;
     text-align: v.$textocentrado;
     background-color: v.$sombranormal;
     font-family: v.$fontfamily ;
+    font-size: 25px;
+    margin: 25px;
     
 }

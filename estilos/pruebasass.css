@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+header h1 {
+  color: rgb(190, 190, 190);
+  background-color: rgb(0, 0, 0);
+  background-clip: border-box;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 20px;
+  display: block;
+}
+
 .logo {
   width: 111px;
   height: 111px;
@@ -13,15 +25,15 @@
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
   padding: 10px 0;
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 nav ul li {
   margin: 0 15px;
@@ -36,9 +48,25 @@ nav ul li a:hover {
   font-weight: bolder;
 }
 
-h2 {
+.barra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prueba {
+  text-align: center;
+  width: 100%;
+  color: rgb(190, 190, 190);
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.bienvenidos {
   text-align: center;
   color: rgb(190, 190, 190);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
   margin: 20px;
   font-family: "helvetica neue", Helvetica, sans-serif;
   font-weight: bolder;
@@ -52,8 +80,15 @@ body {
   background-image: url(../images/fondo4.webp);
   background-size: cover;
   background-repeat: repeat;
-  color: white;
   font-family: arial, sans-serif;
+}
+
+.titulo {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
 
 .parrafo {
@@ -61,6 +96,8 @@ body {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: arial, sans-serif;
+  font-size: 25px;
+  margin: 25px;
 }
 
 .galeria {
@@ -71,7 +108,7 @@ body {
   border-radius: 10px;
 }
 
-.contenedor-imagenes {
+.contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -79,7 +116,7 @@ body {
   justify-items: center;
 }
 
-.imagen-aparte {
+.imagen {
   margin: 15px;
   width: 100%;
   height: auto;
@@ -89,8 +126,10 @@ body {
 }
 
 .pie {
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  color: rgb(190, 190, 190);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .tienda {
@@ -116,12 +155,55 @@ body {
 
 .precio {
   margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+.contenedor-redes {
+  text-align: center;
+  margin-top: 100px;
+}
+.contenedor-redes .texto-redes {
+  font-family: "helvetica neue", Helvetica, sans-serif;
+  font-size: 30px;
+  display: inline-block;
+  color: rgb(190, 190, 190);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contenedor-redes .enlace-instagram {
+  color: rgba(253, 29, 115, 0.8);
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   header {
     text-align: center;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container img.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: static;
+}
+
+
+  .logo {
+    position: relative;
+    height: auto;
+    width: auto;
   }
   nav ul {
     flex-direction: column;
@@ -163,4 +245,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=pruebaestilos.css.map */
+/*# sourceMappingURL=pruebasass.css.map */

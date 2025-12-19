@@ -1,39 +1,23 @@
 @use 'variables' as v;
-@mixin logo{
-    width: 111px;
-    height: 111px;
-    position: absolute;
-    left: 0;
-    top: 0;
+@use 'mixins' as mix;
+
+header h1{
+    @include mix.QU4TRO03();
 }
-
-@mixin h1{
-    color: v.$primarycolor;
-    background-color: v.$sombranormal;
-    background-clip: content-box;
-    font-size: 60px;
-    font-style: bold;
-    text-align: center;
-    animation-delay: 1.2s;
-    animation-duration: 3s;
-    margin-bottom: 0px;
-}
-
-
 
 .logo{
-    @include logo();
+    @include mix.logo();
 }
 
 nav{
-    background-color:v.$sombranormal;
+    background-color:v.$secondarycolor;
     padding: 10px 0;
         ul{
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
                 li{
                     margin: 0 15px;
                         a{
@@ -47,4 +31,10 @@ nav{
                         }
                 }
         }
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
